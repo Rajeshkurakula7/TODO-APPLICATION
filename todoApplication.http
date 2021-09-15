@@ -1,0 +1,33 @@
+GET http://localhost:3000/todos/?priority = HIGH
+
+
+
+
+###
+POST http://localhost:3000/todos/ 
+Content-Type: Application/json 
+
+{
+    "id" : 5,
+    "todo" : "Full stack developer",
+    "priority" : "LOW",
+    "status" : "TO DO"
+}
+
+###
+GET http://localhost:3000/todos/2 
+
+
+### 
+DELETE http://localhost:3000/todos/5/ 
+
+###
+PUT http://localhost:3000/todos/2/ 
+Content-Type: Application/json 
+
+{
+    "todo" : "Some task"
+}
+
+
+
